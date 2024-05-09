@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    min-height: 200vh;
+    background-color: #F6F6F6;
+}
+hr {
+    color: rgba(0, 0, 0, .3);
+}
+.navbar {
+    display: none;
+}
+.container .row .judul {
+    font-family: 'Playfair Display', serif;
+    padding-top: 120px;
+    padding-right: 15px;
+}
+.container .row .judul h4 {
+    font-weight: 500;
+}
+.container .row .judul .from-wikipedei {
+    font-size: 14px;
+}
+.container .row .judul a {
+    font-size: 12px;
+    line-height: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.container .row .judul a:hover {
+    text-decoration: underline;
+}
+.container .row .main {
+    margin-top: 70px;
+    background-color: white;
+    padding: 30px 20px 20px 20px;
+    border: 1px solid #A7D7F9;
+}
+.container .row .main h3 {
+    font-family: 'Playfair Display', serif;
+}
+.container .row .main .p {
+    font-family: 'Playfair Display', serif;
+}
+.penjelasan {
+    background-color: #F8F9FA;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    min-height: 100vh;
+}
+.penjelasan p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 50%;
+    font-weight: bold;
+}
+.penjelasan img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.penjelasan .by {
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 8px;
+}
+.penjelasan a {
+    text-decoration: none;
+}
+.tanya-jawab p {
+    text-align: left;
+    font-weight: normal;
+    line-height: 150%;
+    font-size: 13px;
+}
+.tanya-jawab span {
+    font-weight: bold;
+}
+.penjelasan a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        z-index: 999;
+    }
+    .navbar a {
+        font-family: 'Playfair Display', serif;
+    }
+    .judul {
+        display: none;
+    }
+    .container .row .main {
+        margin-top: 0px;
+        border: none;
+    }
+}

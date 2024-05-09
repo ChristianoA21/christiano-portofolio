@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+body {
+    min-height: 150vh;
+}
+
+.navbar {
+    /* position: fixed; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    background-color: white;
+    /* margin-top: -100px; */
+    z-index: 999;
+    margin-top: 0px;
+}
+.navbar 
+.icon 
+a {
+    text-decoration: none;
+}
+.form {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    gap: 20px;
+}
+.navbar 
+.icon 
+.input 
+input {
+    background-color: white;
+    border-radius: 100px;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    /* margin-top: 90px; */
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: -20px;
+}
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+.menu .all {
+    color: #4285F4;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+hr {
+    opacity: 0.1;
+}
+svg {
+    margin-right: -45px;
+    margin-top: 5px;
+}
+.more-button {
+    background: transparent;
+    border: 0px;
+}
+.more-button p:hover {
+    text-decoration: underline;
+}
+
+.more {
+    position: absolute;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    z-index: 99;
+    line-height: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 240px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+.more a  {
+    text-decoration: none;
+    color: black;
+}
+.content{
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.profile 
+.nama {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.profile 
+.deskripsi {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.profile 
+.deskripsi 
+.titik-dua {
+    font-weight: bold;
+}
+.profile 
+.foto-1 {
+    width: 30%;
+    display: block;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.info {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    padding-left: 10px;
+}
+.info p a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.wiki {
+    margin-top: 20px;
+}
+.judul a {
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.people {
+    margin-top: 20px;
+}
+.people h4 {
+    padding-bottom: 10px;
+}
+.ask {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ask button {
+    width: 50%;
+    background-color: white;
+    border: 0px;
+    text-align: start;
+}
+
+
+@keyframes ask {
+    0% {
+        display: inline;
+        margin-top: -25px;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes ask2 {
+    0% {
+        display: block;
+        margin-top: 0;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        margin-top: -25px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        border-left: none;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        min-height: 200vh;
+    }
+    .form a {
+        display: none;
+    }
+}
+@media (max-width: 476px) {
+.more {
+    margin-left: 170px;
+}
+.navbar {
+    padding-top: 10px;
+}
+.navbar 
+.icon 
+.input {
+width: 60%;
+}
+.navbar 
+.icon 
+.input 
+input {
+    margin-top: -10px;
+    width: 100%;
+}
+.menu {
+    /* margin-top: 100px; */
+    margin-top: 10px;
+    gap: 25px;
+    margin-left: 0px;
+}
+svg {
+    margin-right: -20px;
+}
+.content {
+    border-bottom: 10px solid rgba(0, 0, 0, .1);
+}
+.content 
+.profile 
+.foto-1 {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.content 
+.profile 
+.foto-2 {
+    display: none;
+}
+.content 
+.profile 
+.foto-3 {
+    display: none;
+}
+.info {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    padding-top: 5px;
+    padding-left: 0;
+}
+.people h4 {
+    padding-bottom: 5px;
+}
+.ask {
+    border-top: none;
+}
+}
